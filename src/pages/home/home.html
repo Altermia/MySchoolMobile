@@ -1,14 +1,53 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-navbar>
+<ion-title>
+Ionic Blank
+</ion-title>
+</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+Student Name
+<p>
+<!-- convert to ionic 
+<t-card id="card-profile">
+<mat-card-header>
+<mat-card-title *ngIf="userSchool">
+<h4 id="school-name">{{ userSchool.abbr }}</h4>
+</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+<img
+[src]="user.avatar"
+class="img img-responsive img-user"
+[alt]="user.full_name" />
+<p>{{ user.full_name }}</p>
+</mat-card-content>
+</mat-card>
+
+<mat-card
+id="new-students-card"
+*ngIf="recommendations && recommendations.newStudents">
+<mat-card-header>
+<mat-card-title>
+<h4>New Students</h4>
+</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+<mat-list>
+<mat-list-item *ngFor="let student of recommendations.newStudents">
+<img
+[src]="student.avatar"
+class="img img-responsive img-user"
+[alt]="student.full_name" />
+<p class="name">
+{{ student.full_name }}
+<span class="major">{{ student.major1 }}</span>
+</p>
+</mat-list-item>
+</mat-list>
+</mat-card-content>
+</mat-card>
+</p>
+-->
 </ion-content>
