@@ -9,33 +9,33 @@ Ionic Blank
 <ion-content padding>
 Student Name
 <p>
-<!-- convert to ionic 
-<t-card id="card-profile">
-<mat-card-header>
-<mat-card-title *ngIf="userSchool">
+
+<ion-card id="card-profile">
+<ion-card-header>
+<ion-card-title *ngIf="userSchool">
 <h4 id="school-name">{{ userSchool.abbr }}</h4>
-</mat-card-title>
-</mat-card-header>
-<mat-card-content>
+</ion-card-title>
+</ion-card-header>
+<ion-card-content>
 <img
 [src]="user.avatar"
 class="img img-responsive img-user"
 [alt]="user.full_name" />
 <p>{{ user.full_name }}</p>
-</mat-card-content>
-</mat-card>
+</ion-card-content>
+</ion-card>
 
-<mat-card
+<ion-card
 id="new-students-card"
 *ngIf="recommendations && recommendations.newStudents">
-<mat-card-header>
-<mat-card-title>
+<ion-card-header>
+<ion-card-title>
 <h4>New Students</h4>
-</mat-card-title>
-</mat-card-header>
-<mat-card-content>
-<mat-list>
-<mat-list-item *ngFor="let student of recommendations.newStudents">
+</ion-card-title>
+</ion-card-header>
+<ion-card-content>
+<ion-list>
+<ion-list-item *ngFor="let student of recommendations.newStudents">
 <img
 [src]="student.avatar"
 class="img img-responsive img-user"
@@ -44,10 +44,9 @@ class="img img-responsive img-user"
 {{ student.full_name }}
 <span class="major">{{ student.major1 }}</span>
 </p>
-</mat-list-item>
-</mat-list>
-</mat-card-content>
-</mat-card>
+</ion-list-item>
+</ion-list>
+</ion-card-content>
+</ion-card>
 </p>
--->
 </ion-content>
