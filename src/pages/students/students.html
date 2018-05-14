@@ -5,10 +5,9 @@
   </ion-navbar>
 
 </ion-header>
-<!-- convet to ionic
-    <mat-card id="filter-sidebar">
-      <mat-card-content>
-        <mat-form-field>
+    <ion-mat-card id="filter-sidebar">
+      <ion-mat-card-content>
+        <ion-mat-form-field>
           <input
             type="text"
             name="name"
@@ -17,62 +16,61 @@
             (input)="onSearchStudentsInput()"
             matInput
             #searchName />
-        </mat-form-field>
-        <mat-divider></mat-divider>
+        </ion-mat-form-field>
+        <ion-divider></ion-divider>
         <p class="section-header">Major</p>
         <ul *ngIf="schoolInfo && schoolInfo.majors">
           <li *ngFor="let major of schoolInfo.majors">
-            <mat-checkbox
+            <ion-mat-checkbox
               (click)="modifyStudentsFilter('majors', major)">
               {{ major }}
-            </mat-checkbox>
+            </ion-mat-checkbox>
           </li>
         </ul>
-        <mat-divider></mat-divider>
+        <ion-mat-divider></ion-mat-divider>
         <p class="section-header">Minor</p>
         <ul *ngIf="schoolInfo && schoolInfo.minors">
           <li *ngFor="let minor of schoolInfo.minors">
-            <mat-checkbox
+            <ion-mat-checkbox
               (click)="modifyStudentsFilter('minors', minor)">
               {{ minor }}
-            </mat-checkbox>
+            </ion-mat-checkbox>
           </li>
         </ul>
-        <mat-divider></mat-divider>
+        <ion-mat-divider></ion-mat-divider>
         <p class="section-header">Concentration</p>
         <ul *ngIf="schoolInfo && schoolInfo.concentrations">
           <li *ngFor="let concentration of schoolInfo.concentrations">
-            <mat-checkbox
+            <ion-mat-checkbox
               (click)="modifyStudentsFilter('concentrations', concentration)">
               {{ concentration }}
-            </mat-checkbox>
+            </ion-mat-checkbox>
           </li>
         </ul>
-      </mat-card-content>
-    </mat-card>
-  </div>
+      </ion-mat-card-content>
+    </ion-mat-card>
 
-  <div class="col-xs-12 col-md-7">
-    <mat-paginator
+  <ionic class="col-xs-12 col-md-7">
+    <ion-mat-paginator
       [length]="students.total"
       [pageSize]="30"
       [pageSizeOptions]="[10, 20, 30]"
       (page)="getStudents(user.id, user.type, $event.pageIndex, $event.pageSize, searchName.value);"
       #paginator>
-    </mat-paginator>
+    </ion-mat-paginator>
 
-    <div id="students-list">
-      <mat-card class="card-student" *ngFor="let student of students.all">
-        <mat-card-content>
-          <div class="row">
-            <div class="col-xs-12">
-            <button class="btn-card-menu" mat-button [matMenuTriggerFor]="menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item>Message</button>
-              <button mat-menu-item>Invite to Study Group</button>
-            </mat-menu>
+    <ionic id="students-list">
+      <ion-mat-card class="card-student" *ngFor="let student of students.all">
+        <ion-mat-card-content>
+          <ionic class="row">
+            <ionic class="col-xs-12">
+            <ion-button class="btn-card-menu" mat-button [matMenuTriggerFor]="menu">
+              <ion-mat-icon>more_vert</ion-mat-icon>
+            </ion-button>
+            <ion-mat-menu #menu="matMenu">
+              <ion-button ion-mat-menu-item>Message</ion-button>
+              <ion-button ion-mat-menu-item>Invite to Study Group</ion-button>
+            </ion-mat-menu>
               <img
                 [src]="student.avatar"
                 class="img img-responsive img-user"
@@ -81,10 +79,10 @@
                 {{ student.full_name }}
               </p>
               <p *ngIf="student.school_year">{{ student.school_year }}</p>
-            </div>
-          </div>
-          <div class="row" *ngIf="student.major1 || student.concentration">
-            <div class="col-xs-12">
+            </ionic>
+          </ionic>
+          <ionic class="row" *ngIf="student.major1 || student.concentration">
+            <ionic class="col-xs-12">
               <p *ngIf="student.major1">
                 {{ student.school_year }} - Major in {{ student.major1 }}{{ student.major2 ? ", " + student.major2 : "" }}
               </p>
@@ -92,9 +90,9 @@
               <p *ngIf="student.concentration">
                 Concentration in {{ student.concentration }}
               </p>
-            </div>
-          </div>
-        </mat-card-content>
+            </ionic>
+          </ionic>
+        </ion-mat-card-content>
         <!-- <mat-expansion-panel> -->
         <!--   <mat-expansion-panel-header> -->
         <!--     <mat-panel-title>Bio</mat-panel-title> -->
@@ -104,17 +102,16 @@
         <!--   </mat-expansion-panel-header> -->
         <!--   <p>{{ student.bio }}</p> -->
         <!-- </mat-expansion-panel> -->
-      </mat-card>
-    </div>
+      </ion-mat-card>
+    </ionic>
 
-    <mat-card class="card-student" *ngIf="students.all.length === 0 && !students.searching">
-      <mat-card-content>
+    <ion-mat-card class="card-student" *ngIf="students.all.length === 0 && !students.searching">
+      <ion-mat-card-content>
         <p class="text-center">no students found</p>
-      </mat-card-content>
-    </mat-card>
+      </ion-mat-card-content>
+    </ion-mat-card>
 
-    <mat-spinner *ngIf="students.searching"></mat-spinner>
-    -->
+    <ion-mat-spinner *ngIf="students.searching"></ion-mat-spinner>
 <ion-content padding>
 
 </ion-content>
