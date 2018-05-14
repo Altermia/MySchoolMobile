@@ -1,29 +1,28 @@
-page-students {
+ionic page-students {
 
-/* convert to ionic
-mat-spinner {
+ion-mat-spinner {
   margin: 0 auto;
 }
 
-mat-paginator {
+ion-mat-paginator {
   background-color: #eee;
 }
 
-div#students-list {
+div#students-ion-list {
   max-height: 100vh;
   padding-bottom: 15px;
   overflow-y: scroll;
 }
 
-div#students-list .card-student {
+div#students-ion-list .ion-card-student {
   margin-bottom: 15px;
 }
 
-div#students-list .card-student:last-child {
+div#students-ion-list .ion-card-student:last-child {
   margin-bottom: 0;
 }
 
-div#students-list img.img-user {
+div#students-ion-list img.img-user {
   object-fit: cover;
   height: 50px;
   width: 50px;
@@ -33,7 +32,7 @@ div#students-list img.img-user {
   margin-bottom: 10px;
 }
 
-div#students-list button.btn-card-menu {
+div#students-ion-list ion-button.btn-card-menu {
   float: right;
 }
 
@@ -42,7 +41,7 @@ div#students-list button.btn-card-menu {
   padding-left: 0;
 }
 
-#filter-sidebar mat-divider {
+#filter-sidebar ion-mat-divider {
   padding: 10px 0;
 }
 
@@ -51,8 +50,8 @@ div#students-list button.btn-card-menu {
   margin-top: 15px;
 }
 
-span.mat-checkbox-label {
+span.ion-mat-checkbox-label {
   font-weight: normal;
 }
-*/
+
 }
