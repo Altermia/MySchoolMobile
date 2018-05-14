@@ -1,18 +1,16 @@
 page-home {
 
-//convert to ionic
-/*
-#card-profile {
+#ion-card-profile {
   margin-bottom: 20px;
 }
 
-#card-profile mat-card-header {
+#ion-card-profile mat-card-header {
   border-bottom: 1px solid #f6f6f6;
   margin: -24px -24px 0 -24px;
   padding: 15px 15px 0 15px;
 }
 
-#card-profile img.img-user {
+#ion-card-profile img.img-user {
   height: 85px;
   width: 85px;
   border-radius: 3px;
@@ -25,15 +23,15 @@ page-home {
   text-align: center;
 }
 
-#new-students-card mat-list-item {
+#new-students-ion-card mat-list-item {
   margin-bottom: 20px;
 }
 
-#new-students-card mat-list-item:last-child {
+#new-students-ion-card mat-list-item:last-child {
   margin-bottom: 0;
 }
 
-#new-students-card img.img-user {
+#new-students-ion-card img.img-user {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -42,11 +40,11 @@ page-home {
   margin-right: 10px;
 }
 
-#new-students-card .name {
+#new-students-ion-card .name {
   font-weight: 500;
 }
 
-#new-students-card .major {
+#new-students-ion-card .major {
   display: block;
   font-weight: 300;
   font-size: 0.65em;
